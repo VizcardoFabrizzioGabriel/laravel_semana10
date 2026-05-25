@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+// IMPORTANTE
+use App\Models\Carrito;
+
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
@@ -45,5 +48,11 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    // Relacion: un usuario tiene un carrito
+    public function carrito()
+    {
+        return $this->hasOne(Carrito::class);
     }
 }

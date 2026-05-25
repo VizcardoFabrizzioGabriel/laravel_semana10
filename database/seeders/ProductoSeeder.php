@@ -18,82 +18,17 @@ class ProductoSeeder extends Seeder
 
         $productos = [
 
-            // Electrónica
-            [
-                'nombre' => 'Laptop HP 15',
-                'marca' => 'HP',
-                'precio' => 2500.00,
-                'stock' => 10,
-                'id_categoria' => 1
-            ],
+            ['nombre'=>'Laptop Thinkpad X1',            'marca'=>'Lenovo',      'precio'=>2500.00,'stock'=>10,'id_categoria'=>1,'foto'=>'laptop-thinkpad.jpg'],
+            ['nombre'=>'Audifonos Free Clip',           'marca'=>'Huawei',    'precio'=> 120.50,'stock'=>25,'id_categoria'=>1,'foto'=>'audifonos-huawei.jpg'],
+            ['nombre'=>'Teclado Mecanico',              'marca'=>'Corne','precio'=> 189.90,'stock'=>15,'id_categoria'=>1,'foto'=>'teclado-cornev4.jpg'],
+            ['nombre'=>'Polo Casual',                   'marca'=>'Catsstac',  'precio'=>  45.00,'stock'=>50,'id_categoria'=>2,'foto'=>'polo-catsstac.jpg'],
+            ['nombre'=>'Gorra balaclava Casual',        'marca'=>'Oakley',    'precio'=>  35.00,'stock'=>30,'id_categoria'=>2,'foto'=>'gorra-oakley.jpg'],
+            ['nombre'=>'Cafe Organico 250g',            'marca'=>'Nescafe','precio'=>  18.90,'stock'=>100,'id_categoria'=>3,'foto'=>'cafe-nescafe.jpg'],
+            ['nombre'=>'Avena Quaker',                  'marca'=>'Quaker','precio'=>   8.50,'stock'=>80,'id_categoria'=>3,'foto'=>'avena.jpg'],
+            ['nombre'=>'Lampara LED',                   'marca'=>'Philips', 'precio'=>  55.00,'stock'=>20,'id_categoria'=>4,'foto'=>'lampara.jpg'],
+            ['nombre'=>'Pelota de Futbol Red Star',     'marca'=>'Mikasa',  'precio'=>  79.00,'stock'=>40,'id_categoria'=>5,'foto'=>'pelota.jpg'],
 
-            [
-                'nombre' => 'Audífonos Bluetooth',
-                'marca' => 'Sony',
-                'precio' => 120.50,
-                'stock' => 25,
-                'id_categoria' => 1
-            ],
 
-            [
-                'nombre' => 'Teclado Mecánico',
-                'marca' => 'Logitech',
-                'precio' => 189.90,
-                'stock' => 15,
-                'id_categoria' => 1
-            ],
-
-            // Ropa y Accesorios
-            [
-                'nombre' => 'Polo Deportivo',
-                'marca' => 'Adidas',
-                'precio' => 45.00,
-                'stock' => 50,
-                'id_categoria' => 2
-            ],
-
-            [
-                'nombre' => 'Gorra Casual',
-                'marca' => 'Nike',
-                'precio' => 35.00,
-                'stock' => 30,
-                'id_categoria' => 2
-            ],
-
-            // Alimentos y Bebidas
-            [
-                'nombre' => 'Café Orgánico 250g',
-                'marca' => 'Altomayo',
-                'precio' => 18.90,
-                'stock' => 100,
-                'id_categoria' => 3
-            ],
-
-            [
-                'nombre' => 'Avena Tres Ositos',
-                'marca' => '3 Ositos',
-                'precio' => 8.50,
-                'stock' => 80,
-                'id_categoria' => 3
-            ],
-
-            // Hogar y Jardín
-            [
-                'nombre' => 'Lámpara LED',
-                'marca' => 'Philips',
-                'precio' => 55.00,
-                'stock' => 20,
-                'id_categoria' => 4
-            ],
-
-            // Deportes
-            [
-                'nombre' => 'Pelota de Fútbol',
-                'marca' => 'Mikasa',
-                'precio' => 79.00,
-                'stock' => 40,
-                'id_categoria' => 5
-            ],
         ];
 
         foreach ($productos as $prod) {
